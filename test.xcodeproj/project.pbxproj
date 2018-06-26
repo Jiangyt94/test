@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EBB06AC20E1F6B400232974 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB06AB20E1F6B400232974 /* main.c */; };
+		1EBB06B320E1F6E800232974 /* mykernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB06B220E1F6E800232974 /* mykernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1EBB06A820E1F6B400232974 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBB06AB20E1F6B400232974 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1EBB06B220E1F6E800232974 /* mykernel.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = mykernel.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBB06AB20E1F6B400232974 /* main.c */,
+				1EBB06B220E1F6E800232974 /* mykernel.cl */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBB06AC20E1F6B400232974 /* main.c in Sources */,
+				1EBB06B320E1F6E800232974 /* mykernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OPENCL_COMPILER_VERSION = CL1.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,6 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OPENCL_COMPILER_VERSION = CL1.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
